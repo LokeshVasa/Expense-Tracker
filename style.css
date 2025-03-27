@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+html, body {
+    height: 100%; 
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.4); 
+    z-index: -1;
+}
+
+/* Background video styling */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 200vh;
+    margin-top:-450px;
+    object-fit: cover; 
+}
+
+.container {
+    height: 680px;
+    margin-right: 50px;
+    background: rgb(215 212 212 / 35%);
+    padding: 20px;   
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    backdrop-filter: blur(5px); 
+    overflow: hidden; 
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    color: rgb(1, 1, 1);
+}
+
+.balance {
+    background: rgb(158 158 158 / 18%); 
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.balance h1 {
+    font-size: 2rem;
+}
+
+.incomeExpense {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.income, .expense {
+    flex: 1;
+}
+
+.money {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.list {
+    list-style: none;
+    max-height: 120px;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.list li {
+    padding-left: 0px;
+    background-color: gray;
+    padding: 10px;
+    margin: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    border-left: 4px solid gray;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.formControl {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.formControl label {
+    font-weight: bold;
+    color: rgb(40, 35, 35);
+}
+
+.formControl input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.btn {
+    width: 60%;
+    padding: 10px;
+    background: #3d83a4;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: -10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0277bd;
+}
+
+.balance input {
+    width: 65%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .balance h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        width: 80%;
+    }
+}
