@@ -40,10 +40,10 @@
     }
 
     .container {
-        height: 750px;
-        margin-right: 50px;
+        height: 734px;
+        margin-right: 150px;
         background: rgb(215 212 212 / 35%);
-        padding: 20px;   
+        padding: 7px;   
         width: 100%;
         max-width: 450px;
         border-radius: 12px;
@@ -68,9 +68,10 @@
 
     .balance {
         background: rgb(158 158 158 / 18%); 
-        padding: 10px;
+        padding: 0px;
         border-radius: 8px;
         margin-bottom: 15px;
+        padding-bottom: 1px;
     }
 
     .balance h1 {

@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Function to update the UI based on current financial data
     function updateUI() {
-        const totalBalance = totalIncome - totalExpense; // Calculate remaining balance
+        const totalBalance = totalIncome - totalExpense; // Calculate the  remaining balance
 
         // Update balance, income, and expense on the screen
         balance.innerText = `₹${totalBalance.toFixed(2)}`;
