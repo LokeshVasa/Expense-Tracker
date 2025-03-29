@@ -1,4 +1,4 @@
-// Wait for the entire HTML content to load before running the script
+
 document.addEventListener("DOMContentLoaded", () => {
     // Get references to HTML elements
     const balance = document.getElementById("balance"); // Balance display element
